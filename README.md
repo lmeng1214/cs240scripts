@@ -26,7 +26,11 @@ This script will ask you for a homework number, a specific function name (withou
 The script will automatically stop, print out the test module output, and save the output into ./hw(num)/sniffer_log/
 If the score you are looking to replicate is -1, then the script will grab the max score of the specified function and will stop if it encounters any errors.
 
+If this script stops and errors with no output on the screen, then there was a compilation/make error.
+
 ## tester.sh
 This script will ask you for a homework number and a number of iterations.
 
 This script will terminate when the score does not equal 100, or the number of iterations has been reached. Any errors encountered will be printed and saved into ./hw(num)/err_log/
+
+If this script stops and errors with no output on the screen, then there was a compilation/make error.
