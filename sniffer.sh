@@ -52,6 +52,7 @@ do
       cat ./sniffer_logs/run_${iterations}_error_log
       echo -e "${RED}Iteration ${DEFAULT}${BG_RED}${BOLD}#${iterations}${DEFAULT}${RED} did not recieve full score.${DEFAULT}"
       echo -e "${RED}Error log piped into ./hw${homework_number}/sniffer_logs/run_${iterations}_error_log.${DEFAULT}"
+      echo -e "${RED}If the error log/screen is empty despite the script stopping, then there was a compilation/make error.${DEFAULT}"
       echo -e "${RED}To remove all error logs, type rm ./hw${homework_number}/sniffer_logs/run_*${DEFAULT}"
       exit 0
     else
@@ -65,6 +66,7 @@ do
       cat ./sniffer_logs/run_${iterations}_error_log
       echo -e "${RED}Iteration ${DEFAULT}${BG_RED}${BOLD}#${iterations}${DEFAULT}${RED} tripped the program.${DEFAULT}"
       echo -e "${RED}Error log piped into ./hw${homework_number}/sniffer_logs/run_${iterations}_error_log.${DEFAULT}"
+      echo -e "${RED}If the error log/screen is empty despite the script stopping, then there was a compilation/make error.${DEFAULT}"
       echo -e "${RED}To remove all error logs, type rm ./hw${homework_number}/sniffer_logs/run_*${DEFAULT}"
       exit 0
     else

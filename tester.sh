@@ -41,6 +41,7 @@ do
     cat ./err_logs/run_${iterations}_error_log
     echo -e "${RED}Iteration #${DEFAULT}${BG_RED}${BOLD}${iterations}${DEFAULT}${RED}/${runs} ERRORED${DEFAULT}"
     echo -e "${RED}Error log piped into ./hw${homework_number}/err_logs/run_${iterations}_error_log.${DEFAULT}"
+    echo -e "${RED}If the error log/screen is empty despite the script stopping, then there was a compilation/make error.${DEFAULT}"
     echo -e "${RED}To delete all error logs, type rm ./hw${homework_number}/err_logs/run_*${DEFAULT}"
     exit 0
   else
