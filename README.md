@@ -15,7 +15,7 @@ chmod +x script_name.sh
 ```
 This will turn your script into a working executable.
 
-__To exit any script, press CTRL + C, or COMMAND + C for Macs.__
+__To exit any script at any time, press CTRL + C.__
 __Please be careful when using these scripts on Purdue servers. Running them for too long may have unintended side effects.__
 
 # Script Descriptions
