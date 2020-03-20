@@ -23,10 +23,14 @@ __Please be careful when using these scripts on Purdue servers. Running them for
 ## sniffer.sh
 This script will ask you for a homework number, a specific function name (without the parenthesis), and the score you looking to replicate.
 
+The max score is automatically scraped from the test output. 
+
 The script will automatically stop, print out the test module output, and save the output into ./hw(num)/sniffer_log/
 If the score you are looking to replicate is -1, then the script will grab the max score of the specified function and will stop if it encounters any errors.
 
 If this script stops and errors with no output on the screen, then there was a compilation/make error.
+
+__NOTE: If a function's max score is 12, then putting 12 will stop the program when you recieve a score of 12. Putting in -1 will stop the program when you do not recieve the max score, 12.__
 
 ## tester.sh
 This script will ask you for a homework number and a number of iterations.
