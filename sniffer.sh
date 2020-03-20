@@ -36,7 +36,7 @@ do
   test_output=$(./"hw${homework_number}_test")
   hw_score=$(printf '%s\n' "${test_output}" | grep "${func}(): " | cut -d ":" -f2 | cut -c2-3)
   max_score=$(printf '%s\n' "${test_output}" | grep "${func}(): " | cut -d ":" -f2 | cut -c5-6)
-  ((iterations++)) #wtf
+  ((iterations++))
 
   if [[ $score -eq -1 ]]
   then
@@ -49,7 +49,7 @@ do
       echo -e "${RED}Error log piped into ./hw${homework_number}/sniffer_logs/run_${iterations}_error_log.${DEFAULT}"
       echo -e "${RED}If the error log/screen is empty despite the script stopping, then there was a compilation/make error.${DEFAULT}"
       echo -e "${RED}To remove all error logs, type rm ./hw${homework_number}/sniffer_logs/run_*${DEFAULT}"
-      exit 420
+      exit
     else
       echo -e "${GREEN}Iteration #${BOLD}${iterations} successful${DEFAULT}"
     fi
@@ -63,7 +63,7 @@ do
       echo -e "${RED}Error log piped into ./hw${homework_number}/sniffer_logs/run_${iterations}_error_log.${DEFAULT}"
       echo -e "${RED}If the error log/screen is empty despite the script stopping, then there was a compilation/make error.${DEFAULT}"
       echo -e "${RED}To remove all error logs, type rm ./hw${homework_number}/sniffer_logs/run_*${DEFAULT}"
-      exit 420
+      exit
     else
       echo -e "${GREEN}Iteration #${BOLD}${iterations} successful${DEFAULT}"
     fi
