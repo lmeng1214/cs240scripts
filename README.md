@@ -9,9 +9,9 @@ Example:
   These scripts will not work otherwise.
 __If you wish to remove the err_log and sniffer_log folders, please do so with caution. Make sure you have verified your remove command.__
 
-Before using any script, you must first run this command:
+### Before using any script, you must first run this command:
 ```
-chmod +x script_name.sh
+chmod +x script_name
 ```
 This will turn your script into a working executable.
 
@@ -20,7 +20,7 @@ __Please be careful when using these scripts on Purdue servers. Running them for
 
 # Script Descriptions
 
-## sniffer.sh
+## sniffer
 This script will ask you for a homework number, a specific function name (without the parenthesis), and the score you looking to replicate.
 
 The max score is automatically scraped from the test output. 
@@ -32,7 +32,7 @@ If this script stops and errors with no output on the screen, then there was a c
 
 __NOTE: If a function's max score is 12, then putting 12 will stop the program when you recieve a score of 12. Putting in -1 will stop the program when you do not recieve the max score, 12.__
 
-## tester.sh
+## tester
 This script will ask you for a homework number and a number of iterations.
 
 This script will terminate when the score does not equal 100, or the number of iterations has been reached. Any errors encountered will be printed and saved into ./hw(num)/err_log/
