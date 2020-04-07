@@ -2,6 +2,9 @@
 Scripts that you can use to help you when working on CS240 homework.
 
 # Notice
+__IMPORTANT!__
+__The TAs have announced not to run a script on the project grader thousands of times, as the test module is extremely bulky. Feel free to use this on homework test modules, but do not use it on the project.__
+
 These scripts all run in the directory where you clone your homework.
 Example:
   If you had a directory in your home folder called ~/cs240, and within ~/cs240 there is hw0, hw1, hw2, etc, you must put these scripts in ~/cs240/
